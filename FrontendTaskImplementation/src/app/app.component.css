@@ -1,0 +1,225 @@
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix {
+  display: inline-block;
+}
+/* start commented backslash hack \*/
+* html .clearfix {
+  height: 1%;
+}
+.clearfix {
+  display: block;
+}
+/* close commented backslash hack */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.4;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.blog-box-wrap {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 1100px;
+}
+.blog-box {
+  width: 45%;
+  float: left;
+  border: 1px solid #cc9;
+  border-radius: 10px;
+  margin: 10px;
+  position: relative;
+}
+.blog-box figure {
+  margin: 0 auto;
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 5px 0 0 0;
+}
+.blog-box figure:after {
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+}
+.blog-box figure img {
+  width: 100%;
+  max-width: 100%;
+  height: 200px;
+}
+.fig-cap {
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
+.fig-cap ul {
+  padding: 0;
+  margin: 0;
+  float: left;
+  margin-bottom: 20px;
+}
+.fig-cap ul li {
+  display: inline-block;
+  background: #fff;
+  font-size: 14px;
+  color: #333;
+  margin: 0 10px;
+  border-radius: 20px;
+  padding: 10px;
+}
+.fig-cap p {
+  margin: 0;
+  float: right;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 0px 20px;
+}
+.blog-details {
+  padding: 15px;
+}
+.clg-name {
+  overflow: hidden;
+}
+.clg-name h4 {
+  font-size: 18px;
+  color: #333;
+  margin: 0 0px 10px 0;
+  float: left;
+}
+.clg-name ul {
+  padding: 0 10px 0 0;
+  margin: 0;
+  display: inline-block;
+}
+.clg-name li {
+  display: inline-block;
+}
+.clg-name span {
+  text-align: right;
+  float: right;
+}
+.clg-small {
+  overflow: hidden;
+}
+.clg-small p {
+  text-align: left;
+  float: left;
+  margin: 0;
+}
+.clg-small span {
+  float: right;
+  color: red;
+  font-size: 20px;
+  text-align: right;
+}
+.clg-small span small {
+  display: block;
+  color: #333;
+  font-size: 12px;
+}
+.clg-badage p {
+  float: right;
+  margin: 0;
+  text-align: right;
+  color: #67d0b4;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.blue-badage {
+  background: #c3fae7;
+  color: #333;
+  font-size: 14px;
+  float: left;
+  padding: 10px 20px;
+  border-radius: 0px 50px 50px 0;
+  margin-left: -15px;
+  margin-bottom: 20px;
+}
+.blue-badage a {
+  color: #7093fe;
+  text-decoration: none;
+  margin: 0 5px;
+}
+.fig {
+  color: #67d0b4;
+  font-weight: bold;
+}
+.rating-box {
+  background: #f3ab02;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  color: #fff;
+  position: absolute;
+  z-index: 99;
+  right: 20px;
+  top: 25px;
+}
+.rating-box small {
+  display: block;
+}
+#pointer {
+  width: 200px;
+  height: 40px;
+  background: #7093fe;
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  top: -22px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 40px;
+  font-style: normal;
+  font-weight: 600;
+}
+#pointer:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+}
+#pointer:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+}
+.discount {
+  color: red;
+  font-weight: bold;
+}
